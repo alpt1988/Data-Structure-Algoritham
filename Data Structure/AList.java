@@ -50,11 +50,4 @@ public class AList<Item> {
         size -= 1;
         return x;
     }
-
-
-
-
-
-
-
 }
