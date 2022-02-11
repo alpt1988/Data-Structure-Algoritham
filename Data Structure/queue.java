@@ -1,4 +1,4 @@
-// Linear data structure
+// Linear data structure   FIFO (First in First out)
 // flexible with size, don't have to allocate initially
 // add(add last) remove(remove first)
 public class queue {

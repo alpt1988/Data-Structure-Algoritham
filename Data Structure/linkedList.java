@@ -1,6 +1,6 @@
 // linkedlist: sequence of element, can be any data, can be sorted, unsorted, unique element or duplicate.
-// For LL you have to take linear time to walk through every element
-// insert and delete at first element can be constant time
+// For LL you have to take linear time to walk through every element Access and search O(n) time
+// insert and delete at first element can be constant time  Insert O (1)  Remove O(1)
 //
 public class linkedList {
     public class Node{
@@ -17,9 +17,9 @@ public class linkedList {
     public void addLast(int data){
         if (head == null){
             head = new Node(data);
-            return;;
+            return;
         }
-        Node current = this;//pointer
+        Node current = head;//pointer
         while (current.next != null){
             current = current.next;
         }

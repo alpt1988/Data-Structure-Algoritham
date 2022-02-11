@@ -1,6 +1,7 @@
-// Linear data structure
+// Linear data structure  LIFO (Last in First out)
 // flexible with size, don't have to allocate initially
 // push(add first) pop(remove first)
+// Time complexity:  Access O(n),  Search O(n),  Insert O(1),   Remove O(1)
 public class stack {
     private static class Node{
         private int data;
