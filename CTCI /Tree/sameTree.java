@@ -12,7 +12,7 @@ public class sameTree {
         }
     }
 
-    public boolean isSameTree(Treenode p. Treenode q){
+    public boolean isSameTree(Treenode p, Treenode q){
         if ( p == null && q == null){
             return true;
         }else if ( p == null || q == null || p.val != q.val){
