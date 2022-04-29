@@ -23,6 +23,7 @@ public class queue {
         return head.data;
     };
 
+    //enqueue
     // add to the last, create a new node and let the old tail point to this node. let the new node be the tail
     // if the queue is completely empty, then this new node should be head
     public void add(int data){
@@ -36,6 +37,7 @@ public class queue {
         }
     };
 
+    //dequeue
     // first get the head data
     // remove the head
     // if head is null then tail is null too and return the data

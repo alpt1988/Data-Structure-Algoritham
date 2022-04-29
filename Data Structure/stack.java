@@ -2,6 +2,7 @@
 // flexible with size, don't have to allocate initially
 // push(add first) pop(remove first)
 // Time complexity:  Access O(n),  Search O(n),  Insert O(1),   Remove O(1)
+// Implementing using Linked list
 public class stack {
     private static class Node{
         private int data;
@@ -29,7 +30,7 @@ public class stack {
         Node node = new Node(data);
         node.next = top;
         top = node;
-    };
+    }
 
     // get the top data
     // top should be the next element down
@@ -38,5 +39,5 @@ public class stack {
         int data = top.data;
         top = top.next;
         return data;
-    };
+    }
 }
