@@ -1,3 +1,5 @@
+// implementation of min Heap
+
 import java.util.Arrays;
 
 public class Heap {
@@ -50,7 +52,7 @@ public class Heap {
         }
     }
 
-
+    // get smallest
     public int peek() {
             if (size ==0) throw new IllegalStateException();
             return items[0];

@@ -1,3 +1,7 @@
+// shuffly the array
+// randomly select a pivot point and partition the array into left and right
+// no longer index is in the left of the pivot and no smaller index is in the right of the pivot
+// sort each piecec recursively
 import java.util.Collections;
 
 import static java.util.Collections.swap;
