@@ -1,7 +1,8 @@
 // linkedlist: sequence of element, can be any data, can be sorted, unsorted, unique element or duplicate.
 // For LL you have to take linear time to walk through every element Access and search O(n) time
-// insert and delete at first element can be constant time  Insert O (1)  Remove O(1)
-//
+// Con: insert and delete at first element can be constant time  Insert O (1)  Remove O(1)
+// Double linked list, each element also link to the previous element.
+
 public class linkedList {
     public class Node{
         Node next;
