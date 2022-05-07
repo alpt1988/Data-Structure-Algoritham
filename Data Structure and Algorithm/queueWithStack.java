@@ -9,12 +9,16 @@ public class queueWithStack<T> {
 
     }
 
+    // Move items from the newest on top to the oldest on top
+    // get the oldest item
     public T peek(){
         shiftStacks();
         return stackOldestOnTop.peek();
 
     }
 
+    // Move items from the newest on top to oldest on top
+    // remove the oldest item
     public T dequeue(){
         shiftStacks();
         return stackOldestOnTop.pop();
