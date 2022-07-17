@@ -1,3 +1,4 @@
+// using sliding window technique
 public class BestTimetoBuyandSellStock {
     public int maxProfit(int[] prices){
         int l = 0;

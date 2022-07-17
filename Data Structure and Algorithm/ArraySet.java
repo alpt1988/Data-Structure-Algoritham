@@ -32,7 +32,5 @@ public class ArraySet<T> {
 
     public int size(){
         return size;
-
     }
-
 }
