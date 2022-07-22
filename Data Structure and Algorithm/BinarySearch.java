@@ -17,7 +17,6 @@ public class BinarySearch {
 
     public static boolean binarySearchRecursive(int[] array, int x){
         return binarySearchRecursive(array, x, 0, array.length -1);
-
         }
 
 
