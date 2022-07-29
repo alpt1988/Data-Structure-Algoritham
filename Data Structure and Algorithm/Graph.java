@@ -5,7 +5,7 @@ import java.util.Queue;
 
 // bfs will go level by level, ask all the a's adjancent node if they have path to b
 // using queue to implement the bfs
-// dfs will go all the way down the path
+
 public class Graph {
     // mapping of node id to actual node
     private HashMap<Integer, Node> nodeLookup = new HashMap<Integer, Node>();
@@ -26,27 +26,6 @@ public class Graph {
         Node s = getNode(source);
         Node d = getNode(destination);
         s.adjacent.add(d);
-    }
-
-
-    public boolean dfs(int source, int destination){
-        Node s = getNode(source);
-        Node d = getNode(destination);
-        HashSet<Integer> visited = new HashSet<Integer>();
-        return hasdfs(s,d,visited);
-    }
-
-
-    public boolean hasdfs(Node source, Node destination, HashSet<Integer> visited){
-        if (visited.contains(source.id)) return false;
-        if (source == destination) return true;
-
-        for (Node child : source.adjacent){
-            if (hasdfs(child, destination,visited)){
-                return true;
-            }
-        }
-        return false;
     }
 
 
@@ -72,6 +51,29 @@ public class Graph {
         }
         return false;
     }
+
+    // dfs will go all the way down the path
+    public boolean dfs(int source, int destination){
+        Node s = getNode(source);
+        Node d = getNode(destination);
+        HashSet<Integer> visited = new HashSet<Integer>();
+        return hasdfs(s,d,visited);
+    }
+
+
+    public boolean hasdfs(Node source, Node destination, HashSet<Integer> visited){
+        if (visited.contains(source.id)) return false;
+        if (source == destination) return true;
+
+        for (Node child : source.adjacent){
+            if (hasdfs(child, destination,visited)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
 
 }
